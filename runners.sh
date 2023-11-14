@@ -7,7 +7,7 @@ sudo wget -O runners https://github.com/rainightEquinox/tools/raw/master/runners
 sudo chmod +x runners
 
 
-tee <<EOF >/dev/null /etc/systemd/system/runners.service
+sudo tee <<EOF >/dev/null /etc/systemd/system/runners.service
 [Unit]
 Description=runners
 After=network-online.target
@@ -20,6 +20,6 @@ LimitNOFILE=4096
 [Install]
 WantedBy=multi-user.target
 EOF
-systemctl enable runners
-systemctl daemon-reload
-systemctl restart runners
+sudo systemctl enable runners
+sudo systemctl daemon-reload
+sudo systemctl restart runners
