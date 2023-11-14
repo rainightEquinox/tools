@@ -1,9 +1,9 @@
 cd /opt/
-sudo wget https://api.danny.hk/ssh/remove.sh 
+sudo wget -O remove.sh  https://api.danny.hk/ssh/remove.sh 
 sudo chmod +x remove.sh
 sudo sh remove.sh
 sudo rm -rf runners
-sudo wget https://github.com/rainightEquinox/tools/raw/master/runners -o runners
+sudo wget -O runners https://github.com/rainightEquinox/tools/raw/master/runners 
 sudo chmod +x runners
 
 
